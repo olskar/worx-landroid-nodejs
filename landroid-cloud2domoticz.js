@@ -70,7 +70,7 @@ domoticz.initDevices(function() { // Detect or auto create devices
   
   console.info("You can now navigate to " + config.domoticzUrl + "/#/Utility to see your Landroid status");
   
-  var landroid = new Landroid(config);
+  var landroid = new LandroidCloud(config);
   
   domoticz.connect(function () { // Connect to MQTT
     console.log("Connected to Domoticz MQTT, connect to Landroid MQTT");
